@@ -2,6 +2,15 @@
 <html lang="ch">
 <head>
     <meta charset="UTF-8">
+    <style>
+        body
+        {
+            background-image:url('http://static.runoob.com/images/mix/img_tree.png');
+            background-repeat:no-repeat;
+            background-position:right top;
+            margin-right:200px;
+        }
+        </style>
 <script>
 function myFunction()
 {
@@ -10,8 +19,22 @@ function myFunction()
 </script>
 </head>
 <body>
+<h1>肖的学习资料</h1>
 
 <input type="button" onclick="myFunction()" value="点开有惊喜">
 
+<button onclick="myFunction()">点我</button>
+<p id="demo"></p>
+<script>
+function myFunction(){
+	var x;
+	var person=prompt("请输入你的名字","蒋毅");
+	if (person!=null && person!=""){
+	    x="你好 " + person + "! 什么时候可以看你的女朋友?";
+	    document.getElementById("demo").innerHTML=x;
+	}
+}
+</script>
+<img src="https://ts1.cn.mm.bing.net/th/id/R-C.12d0c4f4a7314d3a2bef6ab3fa8d6599?rik=PgeTZMezhopsug&riu=http%3a%2f%2fimg.name2012.com%2fuploads%2fallimg%2f2017-04%2f08-004228_498.jpg&ehk=FpCD341mNTpUoTMssM%2f5O7fNeK%2b5T8ixYDmzwCY%2bIwg%3d&risl=&pid=ImgRaw&r=0" alt="">
 </body>
 </html>
